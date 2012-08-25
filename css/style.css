@@ -1,0 +1,724 @@
+/* The colors and its values used in Vitaff.
+  
+  blue			#1C90DE
+  black			#000000
+ 	 		#333333
+  gray			#F5F5F5
+	  		#CCCCCC
+  white      		#FFFFFF
+	  		#FBFBFB
+  red			#FF0033
+  border line 		#DDDDDD
+	  		#EEEEEE
+ 			#333333
+  Facebook 		#3B5998 
+*/
+
+.square {display:block; width:40px; height:40px; line-height:40px; text-align:center; white-space:nowrap;}
+.shadow {box-shadow:1px 0px 2px rgba(0,0,0,0.2); -webkit-box-shadow:1px 0px 2px rgba(0,0,0,0.2); -moz-box-shadow:1px 0px 2px rgba(0,0,0,0.2);}
+
+
+/* Elements Styles ////////////////////////////// */
+
+div {
+	outline: none;
+}
+body {
+	background-color: #F8F8F8;
+}
+.app {
+	background-color:#F8F8F8;
+}
+
+/* Background and Border Colors ////////////////////////////// */
+#h .active {
+	border-bottom:1px solid #000000;
+	background-color: #F8F8F8 !important;
+}
+
+#h {
+	background-color:#F8F8F8;
+}
+#w {
+	background-color: #F8F8F8;
+}
+#f {
+	background-color: #F8F8F8;
+}
+#hc {
+	border-bottom:solid 1px #EEEEEE;
+}
+.headbar .active:hover {
+	color:#000000;
+}
+.popover {
+ 	position:fixed;
+	z-index:100;
+	overflow:hidden;
+	background-color:#FFFFFF;
+}
+.menu {
+	border-width: 0 1px 1px 1px;
+	border-style:solid;
+	border-color:#DDDDDD;
+}
+.menu > div {
+	border-bottom:solid 1px #EEEEEE;
+}
+.menu > div > a {
+	display:block;
+	height:40px;
+	line-height:40px;
+	padding-right:40px;
+	text-align:right;
+}
+.title h3 {
+ 	margin-left:10px;
+}
+.product-category {
+	color:#DDDDDD;
+}
+
+blockquote {
+	 font-family:"ff_unit_slab";
+	 padding-top:20px;
+	 padding-bottom:20px;
+}
+input[type="text"], 
+input[type="password"], 
+input[type="search"] {
+	font-family: "ff_unit_slab";
+   	height:30px;
+   	line-height:30px;
+  	border: 1px solid #EEEEEE;
+  	border-top: 1px solid #DDDDDD;
+  	box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+  	-o-transition: none;
+  	-webkit-transition: none;
+  	padding: 3px 1px 3px 3px;
+  	outline: none;
+  	-webkit-appearance: textfield;
+  	cursor: auto;	
+}
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="search"]:focus {
+  	-webkit-box-shadow:inset 0px 0px 1px rgba(0,0,0,0.2); 
+	-moz-box-shadow:inset 0px 0px 1px rgba(0,0,0,0.2); 
+	box-shadow:inner 0px 0px 1px rgba(0,0,0,0.2);
+}
+input[type="submit"], 
+input[type="button"] {
+	height:40px;
+	line-height:40px;
+	border:#DDDDDD solid 1px;
+	padding-left:20px;
+	padding-right:20px;
+}
+input[type="checkbox"] {
+	height:20px;
+	line-height:20px;
+	border:#DDDDDD solid 1px;
+	text-align:right;
+}
+
+/*  ////////////////////////////// */
+.headbar, .footbar, .loadbar {
+	height:40px;
+	left:0;
+	right:0;
+	background-color:#000000;
+}
+.mask {
+ 	position:fixed;
+ 	top:0;
+ 	left:0;
+ 	bottom:0;
+ 	right:0;
+ 	background-color:rgba(0,0,0,0.86);
+ 	overflow: hidden;
+ 	padding:0;
+ 	margin:0;
+}
+.avatar {
+	width:40px;
+}
+.avatar img {
+	height:40px;
+	width:40px;
+	margin:0;
+	vertical-align:top;
+}
+
+/* A Comment Block ////////////////////////////// */
+.comment {
+	width:100%;
+	margin-bottom:1px;
+	background-color:#FFFFFF;
+}
+.comment .avatar {
+	vertical-align:top;
+	padding:10px 0 0 0;
+	margin:0;
+	display:table-cell;
+}
+.comment .content {
+	display:table-cell;
+	padding:10px 10px 5px 10px;
+}
+.comment .meta {
+	height:25px; 
+	line-height:25px;
+}
+.comment .meta a {
+	font-size:10px;
+	margin-left:10px;
+}
+.comment .text {
+	font-family:ff_unit_slab;
+}
+
+.outline {
+	outline:solid 1px rgba(250,250,250,0.15);
+} 
+
+/* Text and Link Colors ////////////////////////////// */
+html, body {
+	color:#555555;
+}
+blockquote {
+	 color:#888888;
+}
+#h a {
+ 	color:#FFFFFF;
+}
+#h > div a:hover {
+ 	color:#EEEEEE;
+}
+#f, 
+#f a, 
+#f a:visited, 
+#f span {
+ 	color:#EEEEEE;
+}
+.count {
+ 	padding-left:5px;
+	color:#FF0033;
+}
+
+
+/* Cursor ////////////////////////////// */
+
+.logoish,
+.buttonish,
+.linkish,
+.arrow-prev,
+.arrow-next,
+.close .icon,
+.thumbnail,
+.tile-more,
+.image-grid-item,
+.more {
+	cursor:pointer;
+}
+
+.active,
+.buttonish[disabled] {
+	 cursor:default !important;
+}
+
+/* Icon Sizes ////////////////////////////// */
+.icon,
+.iconduo,
+.iconhalf {
+	height:40px;
+	line-height:40px;
+	vertical-align:middle;
+	background-image: url('../img/icon.png');
+	background-repeat: no-repeat;
+}
+.icon {
+	width: 40px;
+}
+.iconduo {
+	width: 80px;
+}
+.iconhalf {
+	width: 20px;
+}
+
+/* ICON POSITIONS ////////////////////////////// */
+/* Head ////////// */
+.search .icon {
+	background-position: -240px 0px;
+}
+/*.search:hover .icon {
+	background-position: -240px -40px;
+}
+*/
+.activity .icon {
+	background-position: 0px 0px;
+}
+/*.activity:hover .icon {
+	background-position: 0px -40px;
+}
+*/
+.collection .icon {
+	background-position: -880px 0px;
+}
+.setting .icon {
+	background-position: -200px 0px;	
+}
+.logout .icon {
+	background-position: -1200px 0px;	
+}
+/* Wall ////////// */
+.more .icon {
+	background-position: -40px 0px;
+}
+/*.more:hover .icon {
+	background-position: -40px -40px;
+}
+*/
+.arrow-prev .icon {
+	background-position: -40px -80px;
+}
+.arrow-next .icon {
+	background-position: 0px -80px;
+}
+
+/* Profile ////////// */
+.account .icon {
+	background-position: -640px -40px;
+}
+.medal .icon {
+	background-position: -360px -40px;
+}
+.award .icon {
+	background-position: -400px -40px;
+}
+.fame .icon {
+	background-position: -440px -40px;
+}
+
+/* Document ////////// */
+.prev .icon {
+	background-position: -40px -80px;	
+}
+.next .icon {
+	background-position: 0px -80px;
+}
+.close .icon {
+	background-position: -440px -80px;
+}
+.cancel .icon {
+	background-position: -440px -80px;
+}
+.want .icon {
+	background-position: -480px -80px;
+}
+.want .icon {
+	background-position: -480px -80px;
+}
+.wanted .icon {
+	background-position: -480px -120px;
+}
+.have .icon {
+	background-position: -520px -80px;
+}
+.had .icon {
+	background-position: -520px -120px;
+}
+.tagging .icon {
+	background-position: -80px 0px;	
+}
+.opinion .icon {
+	background-position: -160px 0px;	
+}
+
+/* Login ////////// */
+#facebook-account-service .icon {
+	background-position: -560px 0px;	
+}
+
+.scrollbar-track {
+	background-color:#EEEEEE;
+}
+.scrollbar-handle {
+	position:relative;
+	background-color:#DDDDDD;
+}
+.hori-scrollbar .scrollbar-handle {
+	height:10px;
+}
+.vert-scrollbar .scrollbar-handle {
+	width:10px;
+}
+.arrow-prev, .arrow-next {
+	background-color:#EEEEEE;
+}
+
+/* Has the properties and behaviors of a button */
+.linkish,
+.buttonish {
+  	display:block;
+  	text-align:center;
+	height:40px;
+	line-height:40px;
+  	white-space:nowrap;
+	outline:none;-moz-user-focus:none;-moz-user-select:none;-webkit-user-select:none;
+}
+.buttonish-text {
+	position:absolute;
+	top:0;
+	left:40px;
+	height:40px;
+	line-height:40px;
+	outline:none;-moz-user-focus:none;-moz-user-select:none;-webkit-user-select:none;
+}
+.buttonish[disabled]:hover {
+	background-color:#F8F8F8 !important;
+}
+.buttonish:hover .buttonish-text {
+	color:#EEEEEE;
+}
+.buttonish {
+	color:#DDDDDD;
+}
+.linkish {
+	color:#000000;
+}
+.linkish:hover {
+	background-color:#000000;
+	color:#DDDDDD;
+}
+.notification {
+	height:40px;
+	background-color:#333333;
+}
+.notification .alert,
+.notification .icon {
+	background-color:#000000;
+}
+.notification .alert {
+	padding-left:10px;
+}
+
+/* Tiles Colors ////////////////////////////// */ 
+.tile-inside {
+	background-color:#FFFFFF;
+}
+.tile-more {
+	background-color:#000000;
+}
+.tile-inside-header,
+.stats-summary {
+	color:#CCCCCC;
+	background-color:#FCFCFC;
+}
+.stats-summary-splitter {
+	color:#EEEEEE;
+}
+
+/* Image Grid / Facepile ////////////////////////////// */ 
+
+.image-grid {
+	padding:0;
+	margin:0;
+	background-color:red;	
+	border-width:0;	
+}
+.image-grid-item {
+	display:block;
+	float:left;
+	height:40px;
+	width:40px;
+	padding:0;
+	margin:0;
+	background-color:#DDD;
+	border-width:0;
+}
+.image-grid-item img {
+	height:40px;
+	width:40px;
+	padding:0;
+	margin:0;
+	border-width:0;
+}
+
+
+/* Themes ////////////////////////////// */ 
+
+/* The Default Theme #000000 */
+.default .arrow-prev:hover,
+.default .arrow-next:hover,
+.default .buttonish:hover,
+.default .section-body .more,
+.default .loadbar,
+.default .scrollbar-handle:hover {
+	background-color:#000000;
+}
+.default a,
+.default .section-head :hover {
+	color:#000000;
+}
+
+/* The Facebook Theme #3B5998 */
+.facebook .arrow-prev:hover,
+.facebook .arrow-next:hover,
+.facebook .buttonish:hover,
+.facebook .section-body .more,
+.facebook .loadbar,
+.facebook .scrollbar-handle:hover {
+	background-color:#3B5998;
+}
+.facebook a,
+.facebook .section-head :hover {
+	color:#3B5998;
+}
+
+
+/* Twitter Bootstrap Carousel Customized ////////////////////////////// */ 
+.carousel {
+	position:relative;
+}
+.carousel-inner {
+	position:relative;
+	overflow:hidden;
+	width:100%;
+}
+.carousel .item {
+	display: none;
+	position: relative;
+	-webkit-transition: 0.6s ease-in-out left;
+	-moz-transition: 0.6s ease-in-out left;
+	-ms-transition: 0.6s ease-in-out left;
+	-o-transition: 0.6s ease-in-out left;
+	transition: 0.6s ease-in-out left;
+}
+.carousel .item > img {
+  display: block;
+  line-height: 1;
+}
+.carousel .active,
+.carousel .next,
+.carousel .prev {
+  display: block;
+}
+/*.carousel .active {
+  left: 0;
+}
+.carousel .next,
+.carousel .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel .next {
+  left: 100%;
+}
+.carousel .prev {
+  left: -100%;
+}
+.carousel .next.left,
+.carousel .prev.right {
+  left: 0;
+}
+.carousel .active.left {
+  left: -100%;
+}
+.carousel .active.right {
+  left: 100%;
+}*/
+.carousel-control {
+	position:absolute;
+	left:0;
+	right:0;
+	height:40px;
+	line-height:40px;
+}
+.carousel-control > div {
+	position:absolute;
+	top:0;
+}
+.carousel-control .left {
+	left:0;
+}
+.carousel-control .right {
+	right:0;
+}
+.carousel-control .arrow-prev, 
+.carousel-control .arrow-next {
+	background-color: rgba(0,0,0,0);
+	border-top:solid 1px #EEEEEE;
+	border-bottom:solid 1px #EEEEEE;
+/*        opacity:0.3;*/
+/*        filter:alpha(opacity=30);*/
+}
+.carousel-control .arrow-prev {
+	border-right:solid 1px #EEEEEE;
+} 
+.carousel-control .arrow-next {
+	border-left:solid 1px #EEEEEE;
+}
+.carousel-caption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000000;
+	background: rgba(0, 0, 0, 0.5);
+}
+.carousel-caption h4,
+.carousel-caption p {
+  color: #ffffff;
+}
+
+/* Twitter Bootstrap Dropdown Customized ////////////////////////////// */ 
+.dropup,
+.dropdown {
+	position:relative;
+}
+.dropdown-menu {
+	position:absolute;
+	top:100%; /* MUST */
+	z-index:100;
+	display:none;
+	background-color:#000000;
+	min-width:120px;
+}
+.dropdown-menu-item {
+	position:relative;
+	height:40px;
+	min-width:120px;
+}
+.open {
+	*z-index: 100;
+}
+.open .dropdown-menu {
+	display:block;
+}
+.open .dropdown-toggle {
+	background-color:#000000;
+}
+.dropup .dropdown-menu {
+	top:auto;
+	bottom: 100%;
+}
+#headbar-link-more .dropdown-menu {
+	right:0;
+	width:120px;
+}
+
+/*.dropdown-toggle {
+  *margin-bottom: -3px;
+}
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  border-top: 4px solid #000000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+.pull-right .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+*/
+
+
+.border-left {
+	
+}
+
+
+/* MOUSE INTERACTION VISUAL EFFECTS */
+.section:hover {
+	cursor:pointer
+}
+
+
+/* DESIGN AND DEVELOPMENT ASSISTANT BACKGROUND COLORS */
+.stack {
+	background-color:black;
+}
+.stack-inner {
+	background-color:#F5F5F5;
+}
+.stack-head {
+	background-color:rgba(255,255,255,0.1);
+}
+.stack-foot {
+	background-color:rgba(255,255,255,0.1);
+}
+.stack-neck {
+	background-color:rgba(255,255,255,0.2);
+}
+.stack-knee {
+	background-color:rgba(255,255,255,0.2);
+}
+.stack-body {
+	background-color:rgba(255,255,255,0.3);
+}
+.stack-body-two {
+	background-color:rgba(255,255,255,0.4);
+}
+/* Semi Standard built block*/
+.stack-body-left {
+	background-color:rgba(255,255,255,0.6);
+}
+.stack-body-right {
+	background-color:rgba(255,255,255,0.7);
+}
+.logo-segment {
+	background-color:rgba(255,255,255,0.7);
+}
+.user-name-segment {
+	background-color:rgba(255,255,255,0.9);
+}
+.user-avatar-segment {
+	background-color:rgba(255,255,255,0.8);
+}
+.user-action-segment {
+	background-color:rgba(255,255,255,0.7);
+}
+.viewport {
+	background-color:rgba(255,255,255,0.7);
+}
+.plate {
+/*		background-color:Red;*/
+}
+.scrollbar-track {
+	background-color:rgba(0,0,0,0.1);
+}
+.scrollbar-handle {
+	background-color:rgba(0,0,0,0.2);
+}
+.scrollbar-handle:hover {
+	background-color:rgba(0,0,0,0.5);
+}
+
+#p {
+/*	background-color:GoldenRod;*/
+	background-color:rgba(0,0,0,0);
+}
+#m {
+	background-color:GoldenRon;
+}
+#d {
+	background-color:SlateGray;
+}
+#i {
+	background-color:Black;
+}

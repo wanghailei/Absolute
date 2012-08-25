@@ -1,0 +1,494 @@
+@charset "UTF-8";
+/* COPYRIGHT 2012 FAREFORE CO.
+   WANG Hailei(wanghailei@farefore.com) */
+
+/* Basic */ html,body{padding:0}a{text-decoration:none;}p{margin:0;padding:0}
+/* Fonts */ body{font:12px;font-family:"ff_unit",calibri,helvetica,arial,clean,sans-serif;font-size:small;*font:x-small;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;font-size:108%;/*FF*/line-height:20px;} /*line-height:100%*/
+/* Trick */ .hidden{display:none;visibility: hidden;}.invisiable{visibility:hidden;}.unselectable{outline:none;-moz-user-focus:none;-moz-user-select:none;-webkit-user-select:none;cursor:default;}.buttonish{cursor:pointer}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0;line-height:0px;font-size:0pt;border-width:0;}.row{display:table;border-spacing:0;border-collapse:collapse;border:0;}.row>div{display:table-cell;vertical-align:middle;}
+
+html, body {
+	min-height:480px;
+	min-width:760px;
+}
+
+
+/* UI Frame Layout */
+#app {
+	position:fixed;
+	top:0;bottom:0;left:0;right:0;
+}
+.stack {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+#l { /* Site Preloading */
+	z-index:500;
+}
+#n {
+	z-index:400;
+}
+#a { /* Authentication */
+	z-index:300;
+}
+#m { /* Solo/Detail */
+	z-index:200;
+}
+#i {
+	z-index:0;
+}
+
+
+/* All the elements with Postion:absolute */
+#h, #f, #w, #l, #m, #a,
+#hc, #fc, .wall-container, #lc, #mf, #mh, #mc, #ac,
+#hc > div,
+#hcu > div,
+#ahr, #abr,
+#ahr > div, #abr > div,
+#mhl, #mhr, #mbl, #mbr, #mfr,
+#mhl > div, #mhr > div, #mbr > div, #mfr > div, #ahr >div,
+.wall-content-container, .wall-control-container, #fcn, #fcc,
+#document-action-want > div, 
+#document-action-have > div, 
+.wall-control-container .hori-scrollbar, 
+.wall-control-container .hori-arrow-pair,
+#document-product-detail,
+#product-media,
+#product-media .carousel-inner,
+#product-media .carousel-control,
+.tile,
+.tile-title,
+.tile-inside,
+.tile-inside .more,
+.viewport,
+.plate {
+        position:absolute;
+}
+
+/* The position of the detail */
+#h, #f, #w, #l, #m {
+	left:0;
+	right:0;
+}
+#w {
+	top:41px;
+	bottom:40px;
+}
+
+/* Mask and Modal  */
+#m {
+	top:0;
+	bottom:0;
+	z-index:50;
+}
+#mh {
+	left:40px;
+	right:40px;
+	top:0;
+}
+#mf {
+	bottom:0;
+	left:40px;
+	right:40px;
+}
+#ac {
+	top:40px;
+	bottom:40px;
+	right:40px;
+	width:360px;
+	background-color:#EEEEEE;
+}
+#mc {
+	top:40px;
+	bottom:40px;
+	left:40px;
+	right:40px;
+	background-color:#EEEEEE;
+}
+#ac > div,
+#mc > div {
+	background-color:#F8F8F8;
+}
+
+
+
+
+/* Mask Modal components */
+
+#document-product-detail,
+#product-media,
+#product-media .carousel-inner {
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+}
+
+#product-media .carousel-control {
+	left:0;
+	right:0;
+	top:46%;
+}
+
+/* Product Document View */
+.tile-title {
+	height:40px;
+	line-height:40px;
+	visibility:hidden;
+}
+.tile-title .product-category {
+	height:40px;
+	line-height:40px;
+	padding-left:10px;
+}
+/* Product Document View */
+.product-title {
+	position:absolute;
+	left:10px;
+	top:0;
+	height:40px;
+	line-height:40px;
+	font-weight:bold;
+}
+.product-title .product-category {
+	height:40px;
+	line-height:40px;
+	padding-left:10px;
+	font-weight:normal;
+}
+#document-action-want, 
+#document-action-have {
+	width:100px;
+	border-right:solid 1px #EEEEEE;
+	font-weight:bold;
+}
+#document-action-want {
+	left:0;
+}
+#document-action-have {
+	left:101px;
+}
+#document-action-want > .icon {
+	position:absolute;
+	top:0;
+	left:0;
+	height:40px;
+}
+#ahr > div > .buttonish-text,
+#mhr > div > .buttonish-text {
+	position:absolute;
+	top:0;
+	left:40px;
+	height:40px;
+	line-height:40px;
+}
+#ahr .close,
+#mhr .close {
+	right:0;
+	border-left:solid 1px #EEEEEE;
+}
+
+
+
+
+#l {
+	top:0;
+	bottom:0;
+	z-index:90;
+	background-color:#F8F8F8;
+}
+#lc {
+	left:0;
+	right:0;
+	top:46%;
+	height:40px;
+	background-color:#000000;
+}
+#lc > div {
+	position:absolute;
+	top:0;
+	height:40px;
+	line-height:40px;
+}
+#lcl {
+	left:40px;
+}
+#lct {
+	left:120px;
+	color:#FFFFFF;
+	font-size:120%;
+}
+#lcp {
+	left:160px;
+}
+
+#h, #hc {
+	top:0;
+	height:40px;
+}
+#f, #fc,
+#fcn, #fcc {
+	bottom:0;
+	height:40px;
+}
+#fcn, #fcc {
+	line-height:40px;
+}
+#fcc {
+	right:0;
+	width:160px;
+}
+#fcn {
+	left:0;
+	right:160px;
+}
+.notification .icon,
+.notification .alert {
+	position:absolute;
+	top:0;
+	height:40px;
+}
+.notification .icon {
+	left:0;
+}
+.notification .alert {
+	right:0;
+	left:41px;
+	line-height:40px;
+}
+#hc, #fc, .wall-container {
+	left:40px;
+	right:0;
+}
+.wall-container {
+	top:0;
+	bottom:0;
+}
+.wall-content-container {
+	left:0;
+	right:0;
+	top:0;
+	bottom:40px;
+}
+.wall-control-container {
+	left:0;
+	right:0;
+	bottom:0;
+	height:40px;
+}
+.wall-control-container .hori-scrollbar {
+	top:0;
+	left:0;
+	right:82px;
+	height:40px;
+}
+.wall-control-container .hori-arrow-pair {
+	top:0;
+	right:0;
+	width:81px;
+	height:40px;
+}
+.wall-control-container .hori-scrollbar .viewport {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:40px;
+}
+.wall-control-container .hori-scrollbar .scrollbar-track {
+	position:absolute;
+	top:15px;
+	left:0;
+	right:0;
+	height:10px;
+	min-width:80px;
+}
+
+#hc > div {
+	top:0;
+	height:40px;
+	line-height:40px;
+}
+#hcl {
+	left:0;
+	width:55px;	
+}
+#hcs {
+	left:120px;	
+}
+#hcf {
+	left:220px;
+	width:80px;
+}
+#hca {
+	right:160px;
+	width:150px;
+}
+#hca .buttonish-text {
+	position:absolute;
+	top:0;
+	left:40px;
+	width:100px;
+}
+#hcu {
+	right:40px;
+	width:60px;
+}
+#hcu > div {
+	top:0;
+	right:0;
+}
+#hcu .avatar {
+	width:40px;
+}
+#hcu .login {
+	width:60px;
+}
+#hcm {
+	right:0;
+	width:40px;
+}
+#hcm .buttonish {
+}
+#hcm .dropdown-menu {
+	position:absolute;
+}
+
+
+
+#hasb {
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	height:40px;
+	width:120px;
+}
+#hasb .icon,
+#hasb .buttonish {
+	position:absolute;
+	top:0;
+	height:40px;
+}
+#hasb .icon {
+	left:0;
+}
+#hasb .buttonish {
+	left:40px;
+	width:80px;
+}
+
+.arrow-prev,
+.arrow-next,
+.arrow-prev:hover,
+.arrow-next:hover {
+	position:absolute;
+}
+.arrow-prev,
+.arrow-next {
+	top:0;
+	height:40px;
+	width:40px;
+}
+.arrow-prev {
+	left:0;
+}
+.arrow-next {
+	right:0;
+}
+
+
+/* Section */
+.viewport {
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.tile {
+	width:290px;
+	height:290px;
+}
+.tile-inside,
+.product-summary {
+	width:280px;
+	height:280px;
+}
+.product-summary {
+	position:relative;
+	top:0;
+	left:0;
+}
+.user-summary:hover .tile-title,
+.product-summary:hover .tile-title {
+	visibility:visible;
+}
+.tile .thumbnail,
+.tile .tile-more,
+.tile .thumbnail img,
+.tile .portrait,
+.tile .portrait img {
+	width:280px;
+	height:280px;
+}
+.tile .more {
+	height:40px;
+	width:40px;
+	left:120px;
+	top:120px;
+}
+.follow {
+	width:70px;
+}
+.tile-title {
+	height:40px;
+	line-height:40px;
+	left:0;
+	top:120px;
+	width:280px;
+	background-color:rgba(0,0,0,0.7);
+	color:#FFFFFF;
+}
+.title-text {
+	padding-left:10px;
+}
+.activity-description {
+	padding-left:10px;
+}
+.activity-description p {
+	line-height:120%;
+}
+
+/* Login with 3rd-party accounts */
+.account-service {
+	position:absolute;
+	top:46%;
+	left:0;
+	right:0;
+	height:40px;
+	cursor:pointer;
+}
+.account-service-icon {
+	position:absolute;
+	left:0;
+	top:0;
+	width:40px;
+}
+.account-service-text {
+	position:absolute;
+	top:0;
+	left:41px;
+	right:0px;
+	height:40px;
+	line-height:40px;
+	color:#FFFFFF;
+	padding-left:40px;
+}
+#facebook-account-service .account-service-icon,
+#facebook-account-service .account-service-text {
+	background-color:rgb(60,88,157);
+}

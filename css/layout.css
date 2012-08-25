@@ -1,0 +1,163 @@
+/* STACK ORDERS */
+#i  {z-index:0}
+#io {z-index:50}
+#d  {z-index:100}
+#do {z-index:150}
+#p  {z-index:200}
+#po {z-index:250}
+#n  {z-index:800}
+#l  {z-index:900}
+
+/* STANDARD BUILT BLOCKS */
+div, .absolute {
+	position:absolute;
+}
+.stack {
+	top:0; left:0; right:0; bottom:0;
+}
+.stack-inner { /* Used for  */
+	top:40px; left:40px; right:40px; bottom:40px;
+}
+.stack-head {
+	top:0; left:0; right:0;
+}
+.stack-foot {
+	bottom:0; left:0; right:0;
+}
+.stack-neck {
+	top:40px; left:0; right:0;
+}
+.stack-knee {
+	bottom:40px; left:0; right:0;
+}
+.stack-body {
+	top:40px; bottom:40px; left:0; right:0;
+}
+.stack-body-two {
+	top:80px; bottom:80px; left:0; right:0;
+}
+.stack-head, .stack-foot, .stack-neck, .stack-knee,
+.stack-head div, .stack-foot div, .stack-neck div, .stack-knee div,
+.bar {
+	height:40px; line-height:40px;
+}
+.ribbon {
+	height:80px;
+}
+/* SEMI-STANDARD BUILT BLOCKS */
+.stack-body-left {
+	top:0; bottom:0; left:0; right:320px;
+}
+.stack-body-right {
+	top:0; bottom:0; right:0; width:320px; /* Width should be the same as the stack-body-left's right value.*/
+}
+.stack-head div {
+	top:0; bottom:0;
+}
+
+/* SECTION */
+
+.scrollbar-vertical {
+	top:0;
+	right:0;
+	bottom:0;
+	width:10px;
+}
+.scrollbar-vertical .scrollbar-track {
+	top:0;
+	bottom:0;
+	left:0;
+	width:10px;
+	background-color:rgba(0,0,0,0.1);
+}
+.scrollbar-vertical .scrollbar-handle {
+	right:0;
+	height:100px;
+	width:10px;
+	background-color:rgba(0,0,0,0.3);
+}
+.section {
+}
+
+.viewport {
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+.plate {
+	position:static;
+	
+}
+.slot {
+	position:static;
+	float:left;
+}
+/*
+ * stack-head segments 
+ */
+.logo-segment {
+	left:0;	width:280px;
+}
+.user-name-segment {
+	width:160px; right:80px;
+}
+.user-avatar-segment {
+	width:40px; right:40px;
+}
+.user-action-segment {
+	right:0; width:40px;
+}
+
+/* To the border shortcuts */
+.est {
+	top:0; left:0; right:0; bottom:0;
+}
+.leftest {
+	top:0;
+}
+.rightest {
+	right:0;
+}
+.topest {
+	top:0;
+}
+.bottomest {
+	bottom:0;
+}
+
+.viewport,
+.plate {
+	overflow:hidden;
+}
+.viewport {
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+}
+.plate {
+	top:0;
+	bottom:0;
+	left:0;
+	height:100%; /* MUST */
+}
+
+/* UI COMPONENTS */
+.button-close {
+	height:40px;
+	width:40px;
+}
+
+
+.scroll-pane {
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	overflow: auto;
+	background-color:green;
+}
+.horizontal-only {
+	height: auto;
+}
